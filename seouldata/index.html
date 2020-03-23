@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <title>Seoul Public Art Finder</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Seoul Public Art Finder</a>
+        </div>
+    </nav>
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Search Public Art in Seoul</h1>
+            <p class="lead">Enter keyword to fetch a public art info</p>
+            <!-- id change-->
+            <input type="text" id="searchUser" class="form-control" placeholder="Keyword...">
+        </div>
+        <br>
+        <!-- id change-->
+        <div id="profile"></div>
+    </div>
+
+
+
+    <!--pagination-->
+    <div class="mt-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <footer class="mt-5 p-3 text-center bg-light">
+        Seoul Public Art Finder &copy;
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script> -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=35c390802d539cc1371277abdb8648c6"></script>
+    <script src="seoul.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+    <!-- <script>
+        $.ajax({
+            url: "https://dapi.kakao.com/v2/search/image",
+            headers: { 'Authorization': 'KakaoAK ' + '35c390802d539cc1371277abdb8648c6' },
+            type: "get",
+            data: {
+                query: 'row.COT_CONTS_NAME',
+            },
+            success: function (result) {
+                let data = result.documents[0];
+                let img_url = data.image_url;// img src에 넣어주기
+                let width = data.width;
+                let height = data.height;
+            }
+        });
+    </script> -->
+    <!-- <script>
+        $.ajax({
+            method:"GET",
+            url: http://openapi.seoul.go.kr:8088/${this./xml/GetParkInfo/1/5/
+        })
+    </script> -->
+</body>
+
+</html>
